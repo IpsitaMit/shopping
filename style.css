@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar div.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    /* margin-left: 18%;text-decoration: none; */
+    color: rgb(9, 58, 62);
+    font-size: 6vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43%;
+/* background-color: rgb(4, 20, 44); */
+}
+.navbar ul li {
+    list-style: none;
+    padding: 23px 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(9, 58, 62);;
+    font-size: 3vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar ul li a:hover{
+    text-decoration: none;
+    color: rgb(50, 205, 197);
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar div.search{
+    display: flex;
+    width: 10%;
+    
+    align-items: center;
+    /* background-color: rgb(4, 20, 44); */
+    
+}
+
+.btn:hover{
+    
+    background: linear-gradient(90deg, rgb(9, 58, 69) , rgb(0, 255,225), rgb(9, 58,69));
+    background-size: 200% 200%;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+.btn {
+    
+    height: 6vh;
+    width: 20ch;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(252, 251, 249); 
+    background-image: linear-gradient(to right, rgb(9, 58, 69) , rgb(0, 255, 225));
+    cursor:pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+
+.search{
+    width: 100%;
+    max-width: 17ch;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 20px;
+   }
+   
+.search input{
+    background: transparent;
+    width: 12ch;
+    height: 3vh;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(9, 58, 69);
+}
+
+::placeholder{
+    color: rgb(9, 58, 69);
+}
+  
+.search button img{
+    width: 3vh;
+    height: 3vh;
+}
+.search button{
+    border: none;
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    background: transparent;
+}
+.navbar{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: rgba(9, 25, 50, 0.2);
+    
+}
+.intro{
+    margin: 164px;
+    margin-left: 192px;
+    padding: auto;
+    word-spacing: 13px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+.intro h1{
+    font-size: 8vh;
+}
+.small-heading{
+    word-spacing: 9px;
+    letter-spacing: 8px;
+}
+.bg{
+    background-image: url('background.png');
+    background-size: cover;
+}
+
+.burgur{
+    display: none;
+    position: absolute;
+    left: 12%;
+    top: 32px;
+}
+.line{
+    width: 33px;   
+    height : 5px;
+    background-color: aliceblue;
+    margin: 8px 7px;
+}
+
+@media only screen and (max-width: 1218px){
+    .navbar ul{
+        width: 70%;
+    }
+    .navbar{
+        flex-direction: column;
+        background-color: rgba(9, 25, 50, 0.2);
+    }
+    .intro{
+        justify-content: center;
+        display: grid;
+        margin: 23px;
+        background-image: url('background.png');
+        background-size: cover;
+    }
+    .search{
+        max-width: 19ch;
+    }
+    .search input{
+        width: 14ch;
+    }
+    .bg{
+        background: none;
+    }
+}
+
+@media only screen and (max-width: 556px){
+    .burgur{
+        display: block;
+    }
+    .van_resp{
+        display: none;
+        opacity: 0;
+    }
+    .h_resp{
+        height: 7vh;
+    }
+    .list{
+        flex-direction: column;
+    }
+}
